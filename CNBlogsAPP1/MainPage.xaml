@@ -9,9 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!--由于微软计划砍掉标题栏返回键，主推NaviagetionView控件，所以放弃标题栏返回键用法，增加右上角返回键-->
-    <Grid>
-        <NavigationView>
-            
+    <Grid >
+        <NavigationView IsBackEnabled="True" PaneTitle="博客园">
+            <NavigationView.MenuItems>
+                <NavigationViewItem></NavigationViewItem>
+                <NavigationViewItem></NavigationViewItem>
+                <NavigationViewItem></NavigationViewItem>
+                <NavigationViewItem></NavigationViewItem>
+            </NavigationView.MenuItems>
         </NavigationView>
     </Grid>
 </Page>
