@@ -149,7 +149,7 @@ namespace UWPAPP
             //    .ShowAsync();
             await new ContentDialog()
             {
-                Title = "YourDiary",
+                Title = "错误提示",
                 Content = "Application Unhandled Exception:\r\n" + e.Exception.Message,
                 IsSecondaryButtonEnabled = true,
                 SecondaryButtonText = "关闭"
