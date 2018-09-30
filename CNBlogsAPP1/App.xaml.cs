@@ -101,7 +101,7 @@ namespace UWPAPP
                 }
                 // 确保当前窗口处于活动状态
                 Window.Current.Activate();
-                ExtendAcrylicIntoTitleBar();
+                //ExtendAcrylicIntoTitleBar();
             }
         }
 
@@ -129,19 +129,22 @@ namespace UWPAPP
             deferral.Complete();
         }
 
-        /// Extend acrylic into the title bar. 
-        private void ExtendAcrylicIntoTitleBar()
-        {
+        ///// Extend acrylic into the title bar. 
+        //private void ExtendAcrylicIntoTitleBar()
+        //{
 
-            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
-            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
-            titleBar.ButtonBackgroundColor = Colors.Transparent;
-            //titleBar.BackgroundColor= Colors.Transparent;
-            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
-            titleBar.ButtonForegroundColor = Color.FromArgb(0, 0, 0, 0);
+        //    CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+        //    ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
+        //    titleBar.ButtonBackgroundColor = Colors.Transparent;
+        //    //titleBar.BackgroundColor= Colors.Transparent;
+        //    titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+        //    titleBar.ButtonForegroundColor = Color.FromArgb(0, 0, 0, 0);
+        //    //CoreApplicationViewTitleBar
+        //    //var coreTitleBar = CoreApplication.GetCurrentView().TitleBar;
+        //    //coreTitleBar.ExtendViewIntoTitleBar = true;
 
 
-        }
+        //}
 
         private async void OnUnhandledException(object sender, Windows.UI.Xaml.UnhandledExceptionEventArgs e)
         {

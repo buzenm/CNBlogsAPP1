@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -12,6 +13,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Web.Http;
 
 // https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x804 上介绍了“空白页”项模板
 
@@ -25,6 +27,17 @@ namespace UWPAPP
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void UserAppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            //HttpClient httpClient = new HttpClient();
+            //Uri uri = new Uri("https://api.cnblogs.com/token");
+            //HttpWebRequest httpWebRequest = null;
+            //httpWebRequest = WebRequest.Create(uri) as HttpWebRequest;
+            //httpWebRequest.Method = "POST";
+
+
         }
     }
 }

@@ -9,14 +9,27 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <!--由于微软计划砍掉标题栏返回键，主推NaviagetionView控件，所以放弃标题栏返回键用法，增加右上角返回键-->
-    <Grid >
+    <Grid>
         <NavigationView IsBackEnabled="True" PaneTitle="博客园">
+            
             <NavigationView.MenuItems>
                 <NavigationViewItem></NavigationViewItem>
                 <NavigationViewItem></NavigationViewItem>
                 <NavigationViewItem></NavigationViewItem>
                 <NavigationViewItem></NavigationViewItem>
+                
             </NavigationView.MenuItems>
+            <NavigationView.PaneFooter>
+                <NavigationViewItem>
+                    <AppBarButton Icon="People" 
+                                  Label="个人中心" 
+                                  Name="UserAppBarButton" 
+                                  Click="UserAppBarButton_Click"></AppBarButton>
+                </NavigationViewItem>
+            </NavigationView.PaneFooter>
+            <Frame></Frame>
+            
         </NavigationView>
+        
     </Grid>
 </Page>

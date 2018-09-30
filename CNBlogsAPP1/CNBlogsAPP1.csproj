@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Authorization_Code.cs" />
+    <Compile Include="Models\Authorize.cs" />
+    <Compile Include="Models\Client_Credentials.cs" />
     <Compile Include="Models\Core.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
