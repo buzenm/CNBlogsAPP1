@@ -20,14 +20,13 @@
                 
             </NavigationView.MenuItems>
             <NavigationView.PaneFooter>
-                <NavigationViewItem>
-                    <AppBarButton Icon="People" 
-                                  Label="个人中心" 
+                <NavigationViewItem Icon="People">
+                    <AppBarButton Content="个人中心" 
                                   Name="UserAppBarButton" 
                                   Click="UserAppBarButton_Click"></AppBarButton>
                 </NavigationViewItem>
             </NavigationView.PaneFooter>
-            <Frame></Frame>
+            <Frame Name="ContentFrame" x:FieldModifier="Public"></Frame>
             
         </NavigationView>
         

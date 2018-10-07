@@ -8,7 +8,7 @@ namespace UWPAPP.Models
 {
     public class Authorization_Code
     {
-        public string Content_Type { get; set; }
+        public string client_secret { get; set; }
 
         public string client_id { get; set; }
 
